@@ -1,11 +1,11 @@
 interface iAppProps {
   amount: number;
-  currency: "USD" | "EUR";
 }
 
-export function formatCurrency({ amount, currency }: iAppProps) {
-  return new Intl.NumberFormat("en-US", {
+export function formatCurrency({ amount }: iAppProps) {
+  return new Intl.NumberFormat("en-IN", {
     style: "currency",
-    currency: currency,
+    currency: "INR",
+    minimumFractionDigits: 2,
   }).format(amount);
 }

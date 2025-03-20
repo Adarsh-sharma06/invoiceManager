@@ -69,12 +69,12 @@ export async function createInvoice(prevState: any, formData: FormData) {
 
   const sender = {
     email: "hello@demomailtrap.com",
-    name: "Jan Marshal",
+    name: "TechTrio Automation",
   };
 
   emailClient.send({
     from: sender,
-    to: [{ email: "jan@alenix.de" }],
+    to: [{ email: "info@techtrio.net" }],
     template_uuid: "3c01e4ee-a9ed-4cb6-bbf7-e57c2ced6c94",
     template_variables: {
       clientName: submission.value.clientName,
@@ -135,7 +135,7 @@ export async function editInvoice(prevState: any, formData: FormData) {
 
   const sender = {
     email: "hello@demomailtrap.com",
-    name: "Jan Marshal",
+    name: "TechTrio Automation",
   };
 
   emailClient.send({
